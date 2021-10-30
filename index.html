@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it-it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="gioco Memory carte a coppie con il Fantasmino Gigi">
+	<link rel="stylesheet" type="text/css" href="style-card.css">
+  <title>Fantasmino Gigi Gioco Memory</title>
+
+</head>
+
+<body>
+
+  <h1>GIOCA AL GIOCO DELLE COPPIE CON IL FANTASMINO GIGI</h1>
+
+  <h2>Scegli il retro delle carte con cui vuoi giocare</h2>
+
+  <div class="card-container">
+
+    <img class="back-main" src="cards/back1.svg" alt="Retro delle carte 1" width="100" height="200">
+    <img class="back-main" src="cards/back2.svg" alt="Retro delle carte 2" width="100" height="200">
+    <img class="back-main" src="cards/back3.svg" alt="Retro delle carte 3" width="100" height="200"> 
+    <img class="back-main" src="cards/back4.svg" alt="Retro delle carte 4" width="100" height="200">
+
+  </div>
+  
+  <div class="quantity">
+  
+    <form action="">
+      <h2>scegli con quante carte vuoi giocare</h2>
+      
+      <div class="card-container">
+        
+        <div class="qty-box">
+          <input type="radio" id="2x3" name="qtyCards" value="3" required>
+          <label for="2x3">2 x 3 = 6</label>
+        </div>
+        
+        <div class="qty-box">
+          <input type="radio" id="2x4" name="qtyCards" value="4" required>
+          <label for="2x4">2 x 4 = 8</label>
+        </div>
+        
+        <div class="qty-box">
+          <input type="radio" id="2x5" name="qtyCards" value="5" required>
+          <label for="2x5">2 x 5 =10</label>
+        </div>
+        
+        <div class="qty-box">
+          <input type="radio" id="3x4" name="qtyCards" value="6" required>
+          <label for="3x4">3 x 4 =12</label>
+        </div>
+      </div>
+      
+      <div class="center-element">
+        <button type="button" id="submit">CONFERMA</button>
+      </div>
+      
+    </form>
+  
+  </div>
+
+  <script src="couple-game.js"></script>
+
+</body>
+</html>
